@@ -1,0 +1,11 @@
+# Hard dependency (the only one)
+scikit-learn>=1.5.0
+numpy>=1.26
+
+# Optional acceleration backends (auto-detected, native fallback when absent)
+fairlearn>=0.14.0,<0.15
+optuna>=4.1,<5
+
+# Dev
+pytest>=8
+ruff>=0.6

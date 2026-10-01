@@ -1,0 +1,2448 @@
+{
+  "n_runs": 6,
+  "mean_hv_improvement_rel": 0.08404958650788967,
+  "mean_coverage": 0.7616666666666667,
+  "fallback_events": 0,
+  "fallback_rate": 0.0,
+  "targets": {
+    "hv_improvement_rel_min": 0.1,
+    "coverage_min": 0.8
+  },
+  "targets_met": {
+    "hv_improvement": false,
+    "coverage": false
+  },
+  "runs": [
+    {
+      "constraint": "demographic_parity_diff",
+      "scenario": "mild_direct",
+      "baseline_accuracy": 0.8375,
+      "baseline_violation": 0.8440000000000001,
+      "pareto_front": [
+        {
+          "algorithm": "none",
+          "params": {},
+          "accuracy": 0.8375,
+          "violation": 0.8440000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "reweighing",
+          "params": {},
+          "accuracy": 0.719,
+          "violation": 0.32300000000000006,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9531785910894204
+          },
+          "accuracy": 0.8285,
+          "violation": 0.758,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.10517943155978948
+          },
+          "accuracy": 0.84,
+          "violation": 0.8590000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9718129888921859
+          },
+          "accuracy": 0.814,
+          "violation": 0.695,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9608852839400439
+          },
+          "accuracy": 0.821,
+          "violation": 0.729,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9813392348016604
+          },
+          "accuracy": 0.806,
+          "violation": 0.655,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9911634860567192
+          },
+          "accuracy": 0.801,
+          "violation": 0.615,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.988550599292341
+          },
+          "accuracy": 0.8025,
+          "violation": 0.624,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9760647898614089
+          },
+          "accuracy": 0.81,
+          "violation": 0.681,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.902199636034389
+          },
+          "accuracy": 0.8395,
+          "violation": 0.8480000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9047614477989705
+          },
+          "accuracy": 0.8385,
+          "violation": 0.8460000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.12487123327726149,
+            "eta": 1.435928598332891,
+            "max_iter": 16
+          },
+          "accuracy": 0.7005,
+          "violation": 0.254,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.7415,
+          "violation": 0.38399999999999995,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2182603217828927,
+            "eta": 0.22675984258454318,
+            "max_iter": 20
+          },
+          "accuracy": 0.7575,
+          "violation": 0.432,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.25308393942411805,
+            "eta": 0.47604084388175905,
+            "max_iter": 7
+          },
+          "accuracy": 0.772,
+          "violation": 0.49100000000000005,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.709,
+          "violation": 0.28500000000000003,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.05905828098257171,
+            "eta": 0.5797880430957836,
+            "max_iter": 10
+          },
+          "accuracy": 0.6535,
+          "violation": 0.12799999999999995,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.14769959558077003,
+            "eta": 1.2207287498109176,
+            "max_iter": 8
+          },
+          "accuracy": 0.71,
+          "violation": 0.29500000000000004,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.16398564275581123,
+            "eta": 0.9701389395206552,
+            "max_iter": 5
+          },
+          "accuracy": 0.7255,
+          "violation": 0.33399999999999996,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2866311483426687,
+            "eta": 0.9149355517359232,
+            "max_iter": 20
+          },
+          "accuracy": 0.7955,
+          "violation": 0.574,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.09228071163325018,
+            "eta": 0.8115992898885402,
+            "max_iter": 17
+          },
+          "accuracy": 0.675,
+          "violation": 0.187,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1008874455454212,
+            "eta": 1.1717664204942404,
+            "max_iter": 11
+          },
+          "accuracy": 0.6755,
+          "violation": 0.20600000000000002,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.05163386797788972,
+            "eta": 1.1131741535050992,
+            "max_iter": 9
+          },
+          "accuracy": 0.6355,
+          "violation": 0.09399999999999997,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.08263531559594212,
+            "eta": 0.7598321135729613,
+            "max_iter": 17
+          },
+          "accuracy": 0.6675,
+          "violation": 0.16599999999999998,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06311619731343528,
+            "eta": 0.7348088878689902,
+            "max_iter": 10
+          },
+          "accuracy": 0.65,
+          "violation": 0.12699999999999995,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07511836878610734,
+            "eta": 0.6955335323949312,
+            "max_iter": 9
+          },
+          "accuracy": 0.6645,
+          "violation": 0.15599999999999997,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02031075767885013,
+            "eta": 1.1417136890043251,
+            "max_iter": 9
+          },
+          "accuracy": 0.614,
+          "violation": 0.031000000000000028,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.19131881052226624,
+            "lambda_fair": 0.783519917195005,
+            "grid_size": 8
+          },
+          "accuracy": 0.7885,
+          "violation": 0.56,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.23984926919004376,
+            "lambda_fair": 1.0784015325759628,
+            "grid_size": 6
+          },
+          "accuracy": 0.718,
+          "violation": 0.31100000000000005,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.07148615134600404,
+            "grid_size": 50
+          },
+          "accuracy": 0.6335,
+          "violation": 0.06999999999999995,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.21836795387525887,
+            "grid_size": 50
+          },
+          "accuracy": 0.6855,
+          "violation": 0.21600000000000003,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.215496807724474,
+            "grid_size": 20
+          },
+          "accuracy": 0.667,
+          "violation": 0.16100000000000003,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.12052254382721232,
+            "grid_size": 20
+          },
+          "accuracy": 0.6345,
+          "violation": 0.07199999999999995,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.022490615374376716,
+            "grid_size": 20
+          },
+          "accuracy": 0.584,
+          "violation": 0.013000000000000012,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.05368683804140856,
+            "grid_size": 50
+          },
+          "accuracy": 0.6205,
+          "violation": 0.038000000000000034,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.16752985169998308,
+            "grid_size": 50
+          },
+          "accuracy": 0.661,
+          "violation": 0.139,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.1232465971966551,
+            "grid_size": 50
+          },
+          "accuracy": 0.647,
+          "violation": 0.10099999999999998,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 50
+          },
+          "accuracy": 0.6065,
+          "violation": 0.014000000000000012,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "group_threshold",
+        "params": {
+          "grid_size": 50
+        },
+        "accuracy": 0.6065,
+        "violation": 0.014000000000000012,
+        "backend": "fairlearn",
+        "used_fallback": false
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7452419999999998,
+      "single_best_hypervolume": 0.598009,
+      "hv_improvement_rel": 0.24620532466902634,
+      "coverage": 0.75,
+      "n_trials_total": 183,
+      "elapsed_s": 21.309907200000453,
+      "single_best_algorithm": "group_threshold"
+    },
+    {
+      "constraint": "equal_opportunity_diff",
+      "scenario": "mild_direct",
+      "baseline_accuracy": 0.8375,
+      "baseline_violation": 0.7243265993265993,
+      "pareto_front": [
+        {
+          "algorithm": "none",
+          "params": {},
+          "accuracy": 0.8375,
+          "violation": 0.7243265993265993,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9531785910894204
+          },
+          "accuracy": 0.8285,
+          "violation": 0.6098145432822852,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.10517943155978948
+          },
+          "accuracy": 0.84,
+          "violation": 0.7323979037688716,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9718129888921859
+          },
+          "accuracy": 0.814,
+          "violation": 0.5210301944172913,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9608852839400439
+          },
+          "accuracy": 0.821,
+          "violation": 0.5727503529922884,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9813392348016604
+          },
+          "accuracy": 0.806,
+          "violation": 0.4842579015966113,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9911634860567192
+          },
+          "accuracy": 0.801,
+          "violation": 0.4095185728250244,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.988550599292341
+          },
+          "accuracy": 0.8025,
+          "violation": 0.43134299989138697,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9760647898614089
+          },
+          "accuracy": 0.81,
+          "violation": 0.511764146844792,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.902199636034389
+          },
+          "accuracy": 0.8395,
+          "violation": 0.7255213424568263,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.7755,
+          "violation": 0.22889513413706963,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2182603217828927,
+            "eta": 0.22675984258454318,
+            "max_iter": 20
+          },
+          "accuracy": 0.7815,
+          "violation": 0.25549853372434017,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.25308393942411805,
+            "eta": 0.47604084388175905,
+            "max_iter": 7
+          },
+          "accuracy": 0.7905,
+          "violation": 0.2970497990659281,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07135326275896146,
+            "eta": 0.5955149158473991,
+            "max_iter": 13
+          },
+          "accuracy": 0.735,
+          "violation": 0.08698544585641355,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.7625,
+          "violation": 0.16464374932116865,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.16398564275581123,
+            "eta": 0.9701389395206552,
+            "max_iter": 5
+          },
+          "accuracy": 0.768,
+          "violation": 0.19392853263821008,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2866311483426687,
+            "eta": 0.9149355517359232,
+            "max_iter": 20
+          },
+          "accuracy": 0.7975,
+          "violation": 0.3454776257195612,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02239637727380979,
+            "eta": 0.9352970178858243,
+            "max_iter": 11
+          },
+          "accuracy": 0.711,
+          "violation": 0.021858368632562186,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.022692925533096403,
+            "eta": 1.0113085853240749,
+            "max_iter": 12
+          },
+          "accuracy": 0.7075,
+          "violation": 0.0170793961116541,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.09228071163325018,
+            "eta": 0.8115992898885402,
+            "max_iter": 17
+          },
+          "accuracy": 0.7395,
+          "violation": 0.11746497230368202,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.021923780199937726,
+            "eta": 0.8093167845541949,
+            "max_iter": 12
+          },
+          "accuracy": 0.7125,
+          "violation": 0.031124416205061345,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.08263531559594212,
+            "eta": 0.7598321135729613,
+            "max_iter": 17
+          },
+          "accuracy": 0.7355,
+          "violation": 0.09534864776800256,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.024366340046605827,
+            "eta": 0.845853343146276,
+            "max_iter": 12
+          },
+          "accuracy": 0.722,
+          "violation": 0.03409769740414903,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07449352354420492,
+            "eta": 1.0550664459947217,
+            "max_iter": 13
+          },
+          "accuracy": 0.7325,
+          "violation": 0.08488785706527646,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.05519686662416623,
+            "eta": 0.6955335323949312,
+            "max_iter": 9
+          },
+          "accuracy": 0.7225,
+          "violation": 0.054408330618008094,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06790968134540813,
+            "eta": 0.9100739987862423,
+            "max_iter": 14
+          },
+          "accuracy": 0.7245,
+          "violation": 0.06696671011187139,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.09199670084834935,
+            "eta": 1.2926983492468054,
+            "max_iter": 16
+          },
+          "accuracy": 0.743,
+          "violation": 0.1204382535027696,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.02983034229129663,
+            "grid_size": 20
+          },
+          "accuracy": 0.687,
+          "violation": 0.01325757575757569,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 20
+          },
+          "accuracy": 0.6845,
+          "violation": 0.0028986097534484667,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "reject_option",
+          "params": {
+            "lambda_fair": 0.11800765805195368,
+            "theta_steps": 15
+          },
+          "accuracy": 0.8355,
+          "violation": 0.6959175084175084,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "exponentiated_gradient",
+        "params": {
+          "eps": 0.022692925533096403,
+          "eta": 1.0113085853240749,
+          "max_iter": 12
+        },
+        "accuracy": 0.7075,
+        "violation": 0.0170793961116541,
+        "backend": "fairlearn",
+        "used_fallback": false
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7979434940805907,
+      "single_best_hypervolume": 0.7703537797328119,
+      "hv_improvement_rel": 0.03581434280409179,
+      "coverage": 0.78,
+      "n_trials_total": 183,
+      "elapsed_s": 18.7776236000027,
+      "single_best_algorithm": "exponentiated_gradient"
+    },
+    {
+      "constraint": "demographic_parity_diff",
+      "scenario": "strong_sampling",
+      "baseline_accuracy": 0.7725,
+      "baseline_violation": 0.709,
+      "pareto_front": [
+        {
+          "algorithm": "none",
+          "params": {},
+          "accuracy": 0.7725,
+          "violation": 0.709,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "reweighing",
+          "params": {},
+          "accuracy": 0.717,
+          "violation": 0.332,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7453942447208348
+          },
+          "accuracy": 0.7815,
+          "violation": 0.777,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.10517943155978948
+          },
+          "accuracy": 0.774,
+          "violation": 0.736,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.8728673384861885
+          },
+          "accuracy": 0.7755,
+          "violation": 0.745,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7226689489062432
+          },
+          "accuracy": 0.783,
+          "violation": 0.78,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9911634860567192
+          },
+          "accuracy": 0.7675,
+          "violation": 0.631,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9965238430846463
+          },
+          "accuracy": 0.764,
+          "violation": 0.618,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7939710952590462
+          },
+          "accuracy": 0.78,
+          "violation": 0.768,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.8894565810674616
+          },
+          "accuracy": 0.7735,
+          "violation": 0.731,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.12487123327726149,
+            "eta": 1.435928598332891,
+            "max_iter": 16
+          },
+          "accuracy": 0.6945,
+          "violation": 0.249,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.731,
+          "violation": 0.382,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2182603217828927,
+            "eta": 0.22675984258454318,
+            "max_iter": 20
+          },
+          "accuracy": 0.7405,
+          "violation": 0.43699999999999994,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.25308393942411805,
+            "eta": 0.47604084388175905,
+            "max_iter": 7
+          },
+          "accuracy": 0.7515,
+          "violation": 0.503,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07135326275896146,
+            "eta": 0.5955149158473991,
+            "max_iter": 13
+          },
+          "accuracy": 0.66,
+          "violation": 0.132,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.707,
+          "violation": 0.282,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.05905828098257171,
+            "eta": 0.5797880430957836,
+            "max_iter": 10
+          },
+          "accuracy": 0.658,
+          "violation": 0.12,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.14769959558077003,
+            "eta": 1.2207287498109176,
+            "max_iter": 8
+          },
+          "accuracy": 0.708,
+          "violation": 0.294,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.16398564275581123,
+            "eta": 0.9701389395206552,
+            "max_iter": 5
+          },
+          "accuracy": 0.7165,
+          "violation": 0.325,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2866311483426687,
+            "eta": 0.9149355517359232,
+            "max_iter": 20
+          },
+          "accuracy": 0.7605,
+          "violation": 0.573,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.022692925533096403,
+            "eta": 1.0113085853240749,
+            "max_iter": 12
+          },
+          "accuracy": 0.637,
+          "violation": 0.04199999999999998,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.09228071163325018,
+            "eta": 0.8115992898885402,
+            "max_iter": 17
+          },
+          "accuracy": 0.6785,
+          "violation": 0.18500000000000005,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.021923780199937726,
+            "eta": 0.8093167845541949,
+            "max_iter": 12
+          },
+          "accuracy": 0.6375,
+          "violation": 0.044999999999999984,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.08263531559594212,
+            "eta": 0.7598321135729613,
+            "max_iter": 17
+          },
+          "accuracy": 0.671,
+          "violation": 0.17000000000000004,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.10914604935344079,
+            "eta": 1.046320544123073,
+            "max_iter": 15
+          },
+          "accuracy": 0.6845,
+          "violation": 0.21299999999999997,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.023679288400986376,
+            "eta": 1.0618167349951653,
+            "max_iter": 11
+          },
+          "accuracy": 0.644,
+          "violation": 0.05399999999999999,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06311619731343528,
+            "eta": 0.7348088878689902,
+            "max_iter": 10
+          },
+          "accuracy": 0.6625,
+          "violation": 0.133,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07511836878610734,
+            "eta": 0.6955335323949312,
+            "max_iter": 9
+          },
+          "accuracy": 0.6655,
+          "violation": 0.14700000000000002,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02031075767885013,
+            "eta": 1.1417136890043251,
+            "max_iter": 9
+          },
+          "accuracy": 0.6415,
+          "violation": 0.04899999999999999,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.19131881052226624,
+            "lambda_fair": 0.783519917195005,
+            "grid_size": 8
+          },
+          "accuracy": 0.72,
+          "violation": 0.334,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.07148615134600404,
+            "grid_size": 50
+          },
+          "accuracy": 0.645,
+          "violation": 0.07,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.21836795387525887,
+            "grid_size": 50
+          },
+          "accuracy": 0.6825,
+          "violation": 0.20699999999999996,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.215496807724474,
+            "grid_size": 20
+          },
+          "accuracy": 0.682,
+          "violation": 0.20399999999999996,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.04146702568514224,
+            "grid_size": 20
+          },
+          "accuracy": 0.6325,
+          "violation": 0.02100000000000002,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.09874804165259493,
+            "grid_size": 20
+          },
+          "accuracy": 0.654,
+          "violation": 0.09000000000000002,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.3221499917616366,
+            "grid_size": 20
+          },
+          "accuracy": 0.7035,
+          "violation": 0.27299999999999996,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.04768749832903559,
+            "grid_size": 50
+          },
+          "accuracy": 0.6365,
+          "violation": 0.03300000000000003,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.024336304186876795,
+            "grid_size": 50
+          },
+          "accuracy": 0.6285,
+          "violation": 0.007000000000000006,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.12091483682088358,
+            "grid_size": 50
+          },
+          "accuracy": 0.656,
+          "violation": 0.11399999999999999,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "reject_option",
+          "params": {
+            "lambda_fair": 0.13698186464983753,
+            "theta_steps": 15
+          },
+          "accuracy": 0.769,
+          "violation": 0.636,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "threshold_optimizer",
+        "params": {
+          "eps": 0.024336304186876795,
+          "grid_size": 50
+        },
+        "accuracy": 0.6285,
+        "violation": 0.007000000000000006,
+        "backend": "native",
+        "used_fallback": true
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7270415,
+      "single_best_hypervolume": 0.686388,
+      "hv_improvement_rel": 0.05922816249701346,
+      "coverage": 0.74,
+      "n_trials_total": 183,
+      "elapsed_s": 21.98314080000273,
+      "single_best_algorithm": "threshold_optimizer"
+    },
+    {
+      "constraint": "equal_opportunity_diff",
+      "scenario": "strong_sampling",
+      "baseline_accuracy": 0.7725,
+      "baseline_violation": 0.6164967158146158,
+      "pareto_front": [
+        {
+          "algorithm": "none",
+          "params": {},
+          "accuracy": 0.7725,
+          "violation": 0.6164967158146158,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7453942447208348
+          },
+          "accuracy": 0.7815,
+          "violation": 0.6857976206880714,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.10517943155978948
+          },
+          "accuracy": 0.774,
+          "violation": 0.6527605530292591,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.8728673384861885
+          },
+          "accuracy": 0.7755,
+          "violation": 0.6637729089155298,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7226689489062432
+          },
+          "accuracy": 0.783,
+          "violation": 0.6898626613384777,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9813392348016604
+          },
+          "accuracy": 0.769,
+          "violation": 0.5134697533416012,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9911634860567192
+          },
+          "accuracy": 0.7675,
+          "violation": 0.5080496991410592,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.7939710952590462
+          },
+          "accuracy": 0.78,
+          "violation": 0.6774952919020716,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.8894565810674616
+          },
+          "accuracy": 0.7735,
+          "violation": 0.6500505259289882,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.12487123327726149,
+            "eta": 1.435928598332891,
+            "max_iter": 16
+          },
+          "accuracy": 0.7205,
+          "violation": 0.16184373708143862,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.735,
+          "violation": 0.24604979100638458,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2182603217828927,
+            "eta": 0.22675984258454318,
+            "max_iter": 20
+          },
+          "accuracy": 0.7425,
+          "violation": 0.29044370952184106,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07135326275896146,
+            "eta": 0.5955149158473991,
+            "max_iter": 13
+          },
+          "accuracy": 0.705,
+          "violation": 0.10288916448486518,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.7275,
+          "violation": 0.18369620136879328,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.05905828098257171,
+            "eta": 0.5797880430957836,
+            "max_iter": 10
+          },
+          "accuracy": 0.698,
+          "violation": 0.07832667309723951,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.14769959558077003,
+            "eta": 1.2207287498109176,
+            "max_iter": 8
+          },
+          "accuracy": 0.732,
+          "violation": 0.206237655596895,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2866311483426687,
+            "eta": 0.9149355517359232,
+            "max_iter": 20
+          },
+          "accuracy": 0.756,
+          "violation": 0.3936429194800423,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.022692925533096403,
+            "eta": 1.0113085853240749,
+            "max_iter": 12
+          },
+          "accuracy": 0.685,
+          "violation": 0.02242662257131045,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.0924262676191712,
+            "eta": 1.0981066566468858,
+            "max_iter": 11
+          },
+          "accuracy": 0.707,
+          "violation": 0.11254650682100042,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.10002331578311922,
+            "eta": 0.7552459973233315,
+            "max_iter": 17
+          },
+          "accuracy": 0.714,
+          "violation": 0.13728124569381284,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.052119648016234935,
+            "eta": 1.101030084551213,
+            "max_iter": 12
+          },
+          "accuracy": 0.6955,
+          "violation": 0.06460429011069779,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06311619731343528,
+            "eta": 1.2440836176995307,
+            "max_iter": 10
+          },
+          "accuracy": 0.6975,
+          "violation": 0.07697165954710394,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.04025527921017642,
+            "eta": 0.8090459618725028,
+            "max_iter": 13
+          },
+          "accuracy": 0.6915,
+          "violation": 0.0483441275090718,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02031075767885013,
+            "eta": 1.2761234372948025,
+            "max_iter": 9
+          },
+          "accuracy": 0.6865,
+          "violation": 0.03343897845758126,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.12487123327726149,
+            "lambda_fair": 4.758500101408589,
+            "grid_size": 4
+          },
+          "accuracy": 0.7225,
+          "violation": 0.18251343530384456,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.23984926919004376,
+            "lambda_fair": 1.0784015325759628,
+            "grid_size": 6
+          },
+          "accuracy": 0.672,
+          "violation": 0.008738689081806084,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.07148615134600404,
+            "grid_size": 50
+          },
+          "accuracy": 0.6905,
+          "violation": 0.0456570667401589,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.22191145525838518,
+            "grid_size": 50
+          },
+          "accuracy": 0.7325,
+          "violation": 0.21894952000367462,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.215496807724474,
+            "grid_size": 20
+          },
+          "accuracy": 0.719,
+          "violation": 0.15560837811767947,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.12052254382721232,
+            "grid_size": 20
+          },
+          "accuracy": 0.7035,
+          "violation": 0.08243764641036233,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.022490615374376716,
+            "grid_size": 20
+          },
+          "accuracy": 0.676,
+          "violation": 0.012413302099122725,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.31247992228714283,
+            "grid_size": 50
+          },
+          "accuracy": 0.749,
+          "violation": 0.3097813605254697,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.34978960475171195,
+            "grid_size": 20
+          },
+          "accuracy": 0.7525,
+          "violation": 0.32092003123421065,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 50
+          },
+          "accuracy": 0.669,
+          "violation": 0.003709062514353878,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "reject_option",
+          "params": {
+            "lambda_fair": 0.13698186464983753,
+            "theta_steps": 15
+          },
+          "accuracy": 0.764,
+          "violation": 0.4258187497129209,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "group_threshold",
+        "params": {
+          "grid_size": 50
+        },
+        "accuracy": 0.669,
+        "violation": 0.003709062514353878,
+        "backend": "fairlearn",
+        "used_fallback": false
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7518676335492169,
+      "single_best_hypervolume": 0.6822494775159617,
+      "hv_improvement_rel": 0.1020420803937172,
+      "coverage": 0.77,
+      "n_trials_total": 183,
+      "elapsed_s": 26.801708599999984,
+      "single_best_algorithm": "group_threshold"
+    },
+    {
+      "constraint": "demographic_parity_diff",
+      "scenario": "mixed",
+      "baseline_accuracy": 0.788,
+      "baseline_violation": 0.719,
+      "pareto_front": [
+        {
+          "algorithm": "reweighing",
+          "params": {},
+          "accuracy": 0.715,
+          "violation": 0.283,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9531785910894204
+          },
+          "accuracy": 0.7825,
+          "violation": 0.6160000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9718129888921859
+          },
+          "accuracy": 0.7805,
+          "violation": 0.5820000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9608852839400439
+          },
+          "accuracy": 0.7815,
+          "violation": 0.5980000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9813392348016604
+          },
+          "accuracy": 0.779,
+          "violation": 0.5609999999999999,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9911634860567192
+          },
+          "accuracy": 0.773,
+          "violation": 0.533,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9760647898614089
+          },
+          "accuracy": 0.7795,
+          "violation": 0.5760000000000001,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9965238430846463
+          },
+          "accuracy": 0.7715,
+          "violation": 0.52,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9047614477989705
+          },
+          "accuracy": 0.791,
+          "violation": 0.691,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9963373563631943
+          },
+          "accuracy": 0.772,
+          "violation": 0.521,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.12487123327726149,
+            "eta": 1.435928598332891,
+            "max_iter": 16
+          },
+          "accuracy": 0.706,
+          "violation": 0.253,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.7385,
+          "violation": 0.37800000000000006,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.03626341140709585,
+            "eta": 1.3260289895074158,
+            "max_iter": 14
+          },
+          "accuracy": 0.649,
+          "violation": 0.065,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2182603217828927,
+            "eta": 0.22675984258454318,
+            "max_iter": 20
+          },
+          "accuracy": 0.756,
+          "violation": 0.43299999999999994,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.25308393942411805,
+            "eta": 0.47604084388175905,
+            "max_iter": 7
+          },
+          "accuracy": 0.77,
+          "violation": 0.509,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.714,
+          "violation": 0.28099999999999997,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.14769959558077003,
+            "eta": 1.2207287498109176,
+            "max_iter": 8
+          },
+          "accuracy": 0.7175,
+          "violation": 0.294,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.16398564275581123,
+            "eta": 0.9701389395206552,
+            "max_iter": 5
+          },
+          "accuracy": 0.725,
+          "violation": 0.325,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02102707751424339,
+            "eta": 0.9630151525988264,
+            "max_iter": 11
+          },
+          "accuracy": 0.6395,
+          "violation": 0.03799999999999998,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.10002331578311922,
+            "eta": 1.1359463239439158,
+            "max_iter": 17
+          },
+          "accuracy": 0.6915,
+          "violation": 0.20199999999999996,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.052119648016234935,
+            "eta": 1.040624589852753,
+            "max_iter": 9
+          },
+          "accuracy": 0.66,
+          "violation": 0.09900000000000003,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.08263531559594212,
+            "eta": 0.7497359851263472,
+            "max_iter": 17
+          },
+          "accuracy": 0.679,
+          "violation": 0.16500000000000004,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.10823712116623724,
+            "eta": 1.1696296875972068,
+            "max_iter": 5
+          },
+          "accuracy": 0.6935,
+          "violation": 0.21399999999999997,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.0642178288189813,
+            "eta": 1.090947221692021,
+            "max_iter": 15
+          },
+          "accuracy": 0.668,
+          "violation": 0.125,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.0744077975540047,
+            "eta": 0.8743694057028787,
+            "max_iter": 12
+          },
+          "accuracy": 0.6835,
+          "violation": 0.16600000000000004,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.04607494334624483,
+            "eta": 0.9565119509077915,
+            "max_iter": 10
+          },
+          "accuracy": 0.658,
+          "violation": 0.09300000000000003,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06332279574789625,
+            "eta": 1.0587790195769957,
+            "max_iter": 7
+          },
+          "accuracy": 0.67,
+          "violation": 0.129,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "grid_search",
+          "params": {
+            "eps": 0.19131881052226624,
+            "lambda_fair": 0.783519917195005,
+            "grid_size": 8
+          },
+          "accuracy": 0.7315,
+          "violation": 0.35400000000000004,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.21836795387525887,
+            "grid_size": 50
+          },
+          "accuracy": 0.693,
+          "violation": 0.20299999999999996,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.2947060714641392,
+            "grid_size": 10
+          },
+          "accuracy": 0.708,
+          "violation": 0.257,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.04146702568514224,
+            "grid_size": 20
+          },
+          "accuracy": 0.627,
+          "violation": 0.013000000000000012,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.12052254382721232,
+            "grid_size": 20
+          },
+          "accuracy": 0.6545,
+          "violation": 0.06599999999999995,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.3221499917616366,
+            "grid_size": 20
+          },
+          "accuracy": 0.7205,
+          "violation": 0.302,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.04768749832903559,
+            "grid_size": 50
+          },
+          "accuracy": 0.6465,
+          "violation": 0.041999999999999926,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.15183069843062355,
+            "grid_size": 20
+          },
+          "accuracy": 0.6785,
+          "violation": 0.14799999999999996,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.024336304186876795,
+            "grid_size": 50
+          },
+          "accuracy": 0.6385,
+          "violation": 0.016000000000000014,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.12091483682088358,
+            "grid_size": 50
+          },
+          "accuracy": 0.6675,
+          "violation": 0.10800000000000004,
+          "backend": "native",
+          "used_fallback": true
+        },
+        {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 50
+          },
+          "accuracy": 0.6325,
+          "violation": 0.014000000000000012,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "reject_option",
+          "params": {
+            "lambda_fair": 3.0028313874240085,
+            "theta_steps": 10
+          },
+          "accuracy": 0.5615,
+          "violation": 0.010000000000000009,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "threshold_optimizer",
+        "params": {
+          "eps": 0.024336304186876795,
+          "grid_size": 50
+        },
+        "accuracy": 0.6385,
+        "violation": 0.016000000000000014,
+        "backend": "native",
+        "used_fallback": true
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7364375000000001,
+      "single_best_hypervolume": 0.6976954999999999,
+      "hv_improvement_rel": 0.05552852211315695,
+      "coverage": 0.75,
+      "n_trials_total": 183,
+      "elapsed_s": 24.400545699998474,
+      "single_best_algorithm": "threshold_optimizer"
+    },
+    {
+      "constraint": "equal_opportunity_diff",
+      "scenario": "mixed",
+      "baseline_accuracy": 0.788,
+      "baseline_violation": 0.5771897698834157,
+      "pareto_front": [
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9531785910894204
+          },
+          "accuracy": 0.7825,
+          "violation": 0.43024476591588845,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9047614477989705
+          },
+          "accuracy": 0.791,
+          "violation": 0.5427211133492034,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "disparate_impact_remover",
+          "params": {
+            "repair_level": 0.9963373563631943
+          },
+          "accuracy": 0.772,
+          "violation": 0.33172190685466646,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.12487123327726149,
+            "eta": 1.435928598332891,
+            "max_iter": 16
+          },
+          "accuracy": 0.742,
+          "violation": 0.1658243300982727,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.18762437557517023,
+            "eta": 0.40282423257516753,
+            "max_iter": 7
+          },
+          "accuracy": 0.7685,
+          "violation": 0.25564304461942255,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.25308393942411805,
+            "eta": 0.47604084388175905,
+            "max_iter": 7
+          },
+          "accuracy": 0.7765,
+          "violation": 0.33376670939388386,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1409446052197924,
+            "eta": 0.5785978822574545,
+            "max_iter": 14
+          },
+          "accuracy": 0.7525,
+          "violation": 0.1789476896783252,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.14769959558077003,
+            "eta": 1.2207287498109176,
+            "max_iter": 8
+          },
+          "accuracy": 0.755,
+          "violation": 0.1875358603430386,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.16398564275581123,
+            "eta": 0.9701389395206552,
+            "max_iter": 5
+          },
+          "accuracy": 0.7595,
+          "violation": 0.20733687358847586,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.2866311483426687,
+            "eta": 0.9149355517359232,
+            "max_iter": 20
+          },
+          "accuracy": 0.782,
+          "violation": 0.36287004822071667,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02239637727380979,
+            "eta": 0.9352970178858243,
+            "max_iter": 11
+          },
+          "accuracy": 0.7135,
+          "violation": 0.02864554721357504,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.022692925533096403,
+            "eta": 1.0113085853240749,
+            "max_iter": 12
+          },
+          "accuracy": 0.709,
+          "violation": 0.00884453396813778,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.1008874455454212,
+            "eta": 1.1717664204942404,
+            "max_iter": 11
+          },
+          "accuracy": 0.738,
+          "violation": 0.1354086553134346,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.021923780199937726,
+            "eta": 0.8093167845541949,
+            "max_iter": 12
+          },
+          "accuracy": 0.714,
+          "violation": 0.0332967100042727,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06311619731343528,
+            "eta": 0.7348088878689902,
+            "max_iter": 10
+          },
+          "accuracy": 0.722,
+          "violation": 0.06419459195507538,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.04025527921017642,
+            "eta": 0.9811270248276276,
+            "max_iter": 13
+          },
+          "accuracy": 0.7165,
+          "violation": 0.04713422450100713,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.07511836878610734,
+            "eta": 0.6955335323949312,
+            "max_iter": 9
+          },
+          "accuracy": 0.7355,
+          "violation": 0.0944942928645548,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.046559060294775544,
+            "eta": 0.8867118497018774,
+            "max_iter": 11
+          },
+          "accuracy": 0.719,
+          "violation": 0.057632912165049066,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.06332279574789625,
+            "eta": 1.2926983492468054,
+            "max_iter": 15
+          },
+          "accuracy": 0.729,
+          "violation": 0.08065677836782026,
+          "backend": "fairlearn",
+          "used_fallback": false
+        }
+      ],
+      "recommended": {
+        "algorithm": "exponentiated_gradient",
+        "params": {
+          "eps": 0.022692925533096403,
+          "eta": 1.0113085853240749,
+          "max_iter": 12
+        },
+        "accuracy": 0.709,
+        "violation": 0.00884453396813778,
+        "backend": "fairlearn",
+        "used_fallback": false
+      },
+      "fallback_event": false,
+      "hypervolume": 0.7668799334676188,
+      "single_best_hypervolume": 0.7627010285051576,
+      "hv_improvement_rel": 0.005479086570332248,
+      "coverage": 0.78,
+      "n_trials_total": 183,
+      "elapsed_s": 27.512664699999732,
+      "single_best_algorithm": "exponentiated_gradient"
+    }
+  ],
+  "elapsed_s": 140.84,
+  "environment": {
+    "platform": "Windows-11-10.0.29671-SP0",
+    "python": "3.13.14",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.7.2",
+    "fairlearn": "0.14.0",
+    "optuna": "4.9.0",
+    "backends_available": {
+      "fairlearn": true,
+      "optuna": true
+    }
+  }
+}

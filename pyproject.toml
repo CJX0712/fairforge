@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fairforge"
+version = "0.1.0"
+description = "FairForge - a reproducible fairness audit & mitigation toolkit with backend fallback"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "晨星" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scikit-learn>=1.4,<1.8",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+fairlearn = ["fairlearn>=0.14.0,<0.15"]
+optuna = ["optuna>=4.1,<5"]
+full = ["fairlearn>=0.14.0,<0.15", "optuna>=4.1,<5", "pandas>=2.1", "scipy>=1.11"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+fairforge = "fairforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fairforge*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B"]
+ignore = ["B028"]
+
+[tool.ruff.lint.pep8-naming]
+# X (feature matrix) and A (sensitive attribute) are the project-wide math
+# notation, matching the Dataset dataclass fields.
+extend-ignore-names = ["X", "A", "X_new", "X_k", "A_k", "A2", "yhat"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

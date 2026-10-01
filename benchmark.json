@@ -1,0 +1,3109 @@
+{
+  "entries": [
+    {
+      "scenario": "mild_direct",
+      "mitigator": "reweighing",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.719,
+      "metrics": {
+        "demographic_parity_diff": 0.32300000000000006,
+        "equal_opportunity_diff": 0.07535706527642005,
+        "equalized_odds_diff": 0.07535706527642005,
+        "average_odds_diff": 0.05954552888575307,
+        "disparate_impact": 0.4722222222222223,
+        "theil_index": 0.048559856938062335,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.2418,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mild_direct",
+      "mitigator": "exponentiated_gradient",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.638,
+      "metrics": {
+        "demographic_parity_diff": 0.10299999999999998,
+        "equal_opportunity_diff": 0.10932578472901056,
+        "equalized_odds_diff": 0.17329054738221453,
+        "average_odds_diff": 0.14130816605561253,
+        "disparate_impact": 0.17728055077452665,
+        "theil_index": 0.004737391957477771,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.4615,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mild_direct",
+      "mitigator": "grid_search",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.718,
+      "metrics": {
+        "demographic_parity_diff": 0.31100000000000005,
+        "equal_opportunity_diff": 0.05053220375801015,
+        "equalized_odds_diff": 0.05053220375801015,
+        "average_odds_diff": 0.041065136961499576,
+        "disparate_impact": 0.45269286754002913,
+        "theil_index": 0.04343055261437982,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0656,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mild_direct",
+      "mitigator": "threshold_optimizer",
+      "backend": "native",
+      "used_fallback": true,
+      "accuracy": 0.6085,
+      "metrics": {
+        "demographic_parity_diff": 0.033999999999999975,
+        "equal_opportunity_diff": 0.1980015205821658,
+        "equalized_odds_diff": 0.1980015205821658,
+        "average_odds_diff": 0.195689812646792,
+        "disparate_impact": 0.07188160676532762,
+        "theil_index": 0.0006950864249609216,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.1371,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mild_direct",
+      "mitigator": "group_threshold",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.582,
+      "metrics": {
+        "demographic_parity_diff": 0.05300000000000005,
+        "equal_opportunity_diff": 0.29459242967307486,
+        "equalized_odds_diff": 0.29459242967307486,
+        "average_odds_diff": 0.28646099534758634,
+        "disparate_impact": 0.1007604562737644,
+        "theil_index": 0.0014079741403404192,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0047,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mild_direct",
+      "mitigator": "reject_option",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.6,
+      "metrics": {
+        "demographic_parity_diff": 0.127,
+        "equal_opportunity_diff": 0.03682659932659926,
+        "equalized_odds_diff": 0.03682659932659926,
+        "average_odds_diff": 0.03623747025118457,
+        "disparate_impact": 0.13714902807775375,
+        "theil_index": 0.0027126406304942563,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0048,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "reweighing",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.717,
+      "metrics": {
+        "demographic_parity_diff": 0.332,
+        "equal_opportunity_diff": 0.157973910247577,
+        "equalized_odds_diff": 0.157973910247577,
+        "average_odds_diff": 0.15338945702219386,
+        "disparate_impact": 0.515527950310559,
+        "theil_index": 0.061576479022939695,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0051,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "exponentiated_gradient",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.65,
+      "metrics": {
+        "demographic_parity_diff": 0.09600000000000003,
+        "equal_opportunity_diff": 0.044313536355702565,
+        "equalized_odds_diff": 0.09756804284401105,
+        "average_odds_diff": 0.07094078959985681,
+        "disparate_impact": 0.1853281853281854,
+        "theil_index": 0.005224132969948191,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.4733,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "grid_search",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.635,
+      "metrics": {
+        "demographic_parity_diff": 0.04199999999999998,
+        "equal_opportunity_diff": 0.08836295990078546,
+        "equalized_odds_diff": 0.1568982055073738,
+        "average_odds_diff": 0.12263058270407963,
+        "disparate_impact": 0.08571428571428563,
+        "theil_index": 0.001002785672273812,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0707,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "threshold_optimizer",
+      "backend": "native",
+      "used_fallback": true,
+      "accuracy": 0.6325,
+      "metrics": {
+        "demographic_parity_diff": 0.02100000000000002,
+        "equal_opportunity_diff": 0.16370400992145512,
+        "equalized_odds_diff": 0.16370400992145512,
+        "average_odds_diff": 0.14616797954207922,
+        "disparate_impact": 0.055118110236220486,
+        "theil_index": 0.0004016338675413827,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.035,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "group_threshold",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.623,
+      "metrics": {
+        "demographic_parity_diff": 0.010000000000000009,
+        "equal_opportunity_diff": 0.16495567498047858,
+        "equalized_odds_diff": 0.16495567498047858,
+        "average_odds_diff": 0.15154981702742806,
+        "disparate_impact": 0.02087682672233826,
+        "theil_index": 5.563670274356773e-05,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0074,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "strong_sampling",
+      "mitigator": "reject_option",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.6055,
+      "metrics": {
+        "demographic_parity_diff": 0.07099999999999995,
+        "equal_opportunity_diff": 0.027571080795553704,
+        "equalized_odds_diff": 0.08499860117501301,
+        "average_odds_diff": 0.05628484098528336,
+        "disparate_impact": 0.08422301304863578,
+        "theil_index": 0.0009666775438641577,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0062,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "reweighing",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.715,
+      "metrics": {
+        "demographic_parity_diff": 0.283,
+        "equal_opportunity_diff": 0.06608679728987366,
+        "equalized_odds_diff": 0.07130011240164857,
+        "average_odds_diff": 0.06869345484576111,
+        "disparate_impact": 0.4564516129032258,
+        "theil_index": 0.044384566445560505,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0072,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "exponentiated_gradient",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.6585,
+      "metrics": {
+        "demographic_parity_diff": 0.09600000000000003,
+        "equal_opportunity_diff": 0.1251297076237563,
+        "equalized_odds_diff": 0.1251297076237563,
+        "average_odds_diff": 0.10988594785459077,
+        "disparate_impact": 0.18823529411764717,
+        "theil_index": 0.005406952294938212,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.5455,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "grid_search",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.65,
+      "metrics": {
+        "demographic_parity_diff": 0.07500000000000001,
+        "equal_opportunity_diff": 0.14421656595251175,
+        "equalized_odds_diff": 0.14421656595251175,
+        "average_odds_diff": 0.12662575875637683,
+        "disparate_impact": 0.1506024096385542,
+        "theil_index": 0.003319359391340683,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0752,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "threshold_optimizer",
+      "backend": "native",
+      "used_fallback": true,
+      "accuracy": 0.627,
+      "metrics": {
+        "demographic_parity_diff": 0.013000000000000012,
+        "equal_opportunity_diff": 0.21684062747970456,
+        "equalized_odds_diff": 0.21807525557993898,
+        "average_odds_diff": 0.21745794152982179,
+        "disparate_impact": 0.024952015355086288,
+        "theil_index": 7.98063618268367e-05,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.033,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "group_threshold",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.627,
+      "metrics": {
+        "demographic_parity_diff": 0.013000000000000012,
+        "equal_opportunity_diff": 0.21684062747970456,
+        "equalized_odds_diff": 0.21807525557993898,
+        "average_odds_diff": 0.21745794152982179,
+        "disparate_impact": 0.024952015355086288,
+        "theil_index": 7.98063618268367e-05,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.005,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    },
+    {
+      "scenario": "mixed",
+      "mitigator": "reject_option",
+      "backend": "fairlearn",
+      "used_fallback": false,
+      "accuracy": 0.5615,
+      "metrics": {
+        "demographic_parity_diff": 0.010000000000000009,
+        "equal_opportunity_diff": 0.06467069523286328,
+        "equalized_odds_diff": 0.17676497350532572,
+        "average_odds_diff": 0.1207178343690945,
+        "disparate_impact": 0.011627906976744096,
+        "theil_index": 1.7099375873502482e-05,
+        "calibration_by_group": null
+      },
+      "n_trials": 0,
+      "elapsed_s": 0.0056,
+      "seed": 42,
+      "dependency_versions": {
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2"
+      },
+      "environment_fingerprint": {
+        "platform": "Windows-11-10.0.29671-SP0",
+        "python": "3.13.14",
+        "numpy": "2.5.3",
+        "scikit_learn": "1.7.2",
+        "fairlearn": "0.14.0",
+        "optuna": "4.9.0",
+        "backends_available": {
+          "fairlearn": true,
+          "optuna": true
+        }
+      }
+    }
+  ],
+  "environment": {
+    "platform": "Windows-11-10.0.29671-SP0",
+    "python": "3.13.14",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.7.2",
+    "fairlearn": "0.14.0",
+    "optuna": "4.9.0",
+    "backends_available": {
+      "fairlearn": true,
+      "optuna": true
+    }
+  },
+  "flagship": {
+    "n_runs": 6,
+    "mean_hv_improvement_rel": 0.08767919923183402,
+    "mean_coverage": 0.7600000000000001,
+    "fallback_events": 0,
+    "fallback_rate": 0.0,
+    "targets": {
+      "hv_improvement_rel_min": 0.1,
+      "coverage_min": 0.8
+    },
+    "targets_met": {
+      "hv_improvement": false,
+      "coverage": false
+    },
+    "runs": [
+      {
+        "constraint": "demographic_parity_diff",
+        "scenario": "mild_direct",
+        "baseline_accuracy": 0.8375,
+        "baseline_violation": 0.8440000000000001,
+        "pareto_front": [
+          {
+            "algorithm": "none",
+            "params": {},
+            "accuracy": 0.8375,
+            "violation": 0.8440000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "reweighing",
+            "params": {},
+            "accuracy": 0.719,
+            "violation": 0.32300000000000006,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9531785910894204
+            },
+            "accuracy": 0.8285,
+            "violation": 0.758,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.10517943155978948
+            },
+            "accuracy": 0.84,
+            "violation": 0.8590000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9718129888921859
+            },
+            "accuracy": 0.814,
+            "violation": 0.695,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9608852839400439
+            },
+            "accuracy": 0.821,
+            "violation": 0.729,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9813392348016604
+            },
+            "accuracy": 0.806,
+            "violation": 0.655,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9911634860567192
+            },
+            "accuracy": 0.801,
+            "violation": 0.615,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.988550599292341
+            },
+            "accuracy": 0.8025,
+            "violation": 0.624,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9760647898614089
+            },
+            "accuracy": 0.81,
+            "violation": 0.681,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.902199636034389
+            },
+            "accuracy": 0.8395,
+            "violation": 0.8480000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9965238430846463
+            },
+            "accuracy": 0.7915,
+            "violation": 0.588,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9047614477989705
+            },
+            "accuracy": 0.8385,
+            "violation": 0.8460000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.6985,
+            "violation": 0.24800000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.74,
+            "violation": 0.375,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.757,
+            "violation": 0.437,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.25308393942411805,
+              "eta": 0.47604084388175905,
+              "max_iter": 7
+            },
+            "accuracy": 0.7755,
+            "violation": 0.508,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1409446052197924,
+              "eta": 0.5785978822574545,
+              "max_iter": 14
+            },
+            "accuracy": 0.706,
+            "violation": 0.279,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05905828098257171,
+              "eta": 0.5797880430957836,
+              "max_iter": 10
+            },
+            "accuracy": 0.648,
+            "violation": 0.121,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.711,
+            "violation": 0.29500000000000004,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.723,
+            "violation": 0.32899999999999996,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.0924262676191712,
+              "eta": 1.0981066566468858,
+              "max_iter": 11
+            },
+            "accuracy": 0.6715,
+            "violation": 0.178,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10002331578311922,
+              "eta": 0.7552459973233315,
+              "max_iter": 17
+            },
+            "accuracy": 0.679,
+            "violation": 0.199,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02117614965881096,
+              "eta": 0.8026528446052719,
+              "max_iter": 9
+            },
+            "accuracy": 0.613,
+            "violation": 0.03300000000000003,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04962016594469949,
+              "eta": 1.072127898714928,
+              "max_iter": 9
+            },
+            "accuracy": 0.639,
+            "violation": 0.09899999999999998,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.024384313891455393,
+              "eta": 0.8462110116941084,
+              "max_iter": 12
+            },
+            "accuracy": 0.623,
+            "violation": 0.051000000000000045,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04611777599973066,
+              "eta": 1.2153502373780478,
+              "max_iter": 18
+            },
+            "accuracy": 0.635,
+            "violation": 0.08499999999999996,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.19131881052226624,
+              "lambda_fair": 0.783519917195005,
+              "grid_size": 8
+            },
+            "accuracy": 0.7885,
+            "violation": 0.56,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.23984926919004376,
+              "lambda_fair": 1.0784015325759628,
+              "grid_size": 6
+            },
+            "accuracy": 0.718,
+            "violation": 0.31100000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.07148615134600404,
+              "grid_size": 50
+            },
+            "accuracy": 0.6335,
+            "violation": 0.06999999999999995,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.21836795387525887,
+              "grid_size": 50
+            },
+            "accuracy": 0.6855,
+            "violation": 0.21600000000000003,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.215496807724474,
+              "grid_size": 20
+            },
+            "accuracy": 0.667,
+            "violation": 0.16100000000000003,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.12052254382721232,
+              "grid_size": 20
+            },
+            "accuracy": 0.6345,
+            "violation": 0.07199999999999995,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.022490615374376716,
+              "grid_size": 20
+            },
+            "accuracy": 0.584,
+            "violation": 0.013000000000000012,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.05368683804140856,
+              "grid_size": 50
+            },
+            "accuracy": 0.6205,
+            "violation": 0.038000000000000034,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.16752985169998308,
+              "grid_size": 50
+            },
+            "accuracy": 0.661,
+            "violation": 0.139,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.1232465971966551,
+              "grid_size": 50
+            },
+            "accuracy": 0.647,
+            "violation": 0.10099999999999998,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "group_threshold",
+            "params": {
+              "grid_size": 50
+            },
+            "accuracy": 0.6065,
+            "violation": 0.014000000000000012,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 50
+          },
+          "accuracy": 0.6065,
+          "violation": 0.014000000000000012,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7448849999999999,
+        "single_best_hypervolume": 0.598009,
+        "hv_improvement_rel": 0.24560834368713502,
+        "coverage": 0.75,
+        "n_trials_total": 183,
+        "elapsed_s": 20.606317999998282,
+        "single_best_algorithm": "group_threshold"
+      },
+      {
+        "constraint": "equal_opportunity_diff",
+        "scenario": "mild_direct",
+        "baseline_accuracy": 0.8375,
+        "baseline_violation": 0.7243265993265993,
+        "pareto_front": [
+          {
+            "algorithm": "none",
+            "params": {},
+            "accuracy": 0.8375,
+            "violation": 0.7243265993265993,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9531785910894204
+            },
+            "accuracy": 0.8285,
+            "violation": 0.6098145432822852,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.10517943155978948
+            },
+            "accuracy": 0.84,
+            "violation": 0.7323979037688716,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9718129888921859
+            },
+            "accuracy": 0.814,
+            "violation": 0.5210301944172913,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9608852839400439
+            },
+            "accuracy": 0.821,
+            "violation": 0.5727503529922884,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9813392348016604
+            },
+            "accuracy": 0.806,
+            "violation": 0.4842579015966113,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9911634860567192
+            },
+            "accuracy": 0.801,
+            "violation": 0.4095185728250244,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.988550599292341
+            },
+            "accuracy": 0.8025,
+            "violation": 0.43134299989138697,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9760647898614089
+            },
+            "accuracy": 0.81,
+            "violation": 0.511764146844792,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.902199636034389
+            },
+            "accuracy": 0.8395,
+            "violation": 0.7255213424568263,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.752,
+            "violation": 0.15989193005322044,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.7765,
+            "violation": 0.22889513413706963,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.7795,
+            "violation": 0.26447268382752254,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.25308393942411805,
+              "eta": 0.47604084388175905,
+              "max_iter": 7
+            },
+            "accuracy": 0.792,
+            "violation": 0.2949522102747909,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07135326275896146,
+              "eta": 0.5955149158473991,
+              "max_iter": 13
+            },
+            "accuracy": 0.729,
+            "violation": 0.07562180949277719,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1409446052197924,
+              "eta": 0.5785978822574545,
+              "max_iter": 14
+            },
+            "accuracy": 0.755,
+            "violation": 0.16405995438253507,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05905828098257171,
+              "eta": 0.5797880430957836,
+              "max_iter": 10
+            },
+            "accuracy": 0.727,
+            "violation": 0.07474611708482681,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.7635,
+            "violation": 0.17122841316389703,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.767,
+            "violation": 0.2038055284023026,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.08956917224550447,
+              "eta": 0.9019494930347778,
+              "max_iter": 11
+            },
+            "accuracy": 0.736,
+            "violation": 0.0989328771586836,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02524342778551314,
+              "eta": 0.7646631532833348,
+              "max_iter": 17
+            },
+            "accuracy": 0.7045,
+            "violation": 0.021566471163245393,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.023121847305955644,
+              "eta": 1.0968575503545996,
+              "max_iter": 17
+            },
+            "accuracy": 0.71,
+            "violation": 0.03351390246551533,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.09864283817160785,
+              "eta": 1.1078121104725693,
+              "max_iter": 17
+            },
+            "accuracy": 0.743,
+            "violation": 0.1204382535027696,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.043703249903041495,
+              "eta": 1.046320544123073,
+              "max_iter": 15
+            },
+            "accuracy": 0.7195,
+            "violation": 0.040071413055284055,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.0743746992392098,
+              "eta": 1.004418006047459,
+              "max_iter": 15
+            },
+            "accuracy": 0.725,
+            "violation": 0.06755050505050508,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.020532009697796085,
+              "eta": 1.4960111352290242,
+              "max_iter": 19
+            },
+            "accuracy": 0.7055,
+            "violation": 0.03202726186597149,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.08163239799090653,
+              "eta": 0.8247637107042447,
+              "max_iter": 15
+            },
+            "accuracy": 0.73,
+            "violation": 0.0980571847507331,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.02983034229129663,
+              "grid_size": 20
+            },
+            "accuracy": 0.687,
+            "violation": 0.01325757575757569,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "group_threshold",
+            "params": {
+              "grid_size": 20
+            },
+            "accuracy": 0.6845,
+            "violation": 0.0028986097534484667,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "reject_option",
+            "params": {
+              "lambda_fair": 0.11800765805195368,
+              "theta_steps": 15
+            },
+            "accuracy": 0.8355,
+            "violation": 0.6959175084175084,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02524342778551314,
+            "eta": 0.7646631532833348,
+            "max_iter": 17
+          },
+          "accuracy": 0.7045,
+          "violation": 0.021566471163245393,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7972011071738894,
+        "single_best_hypervolume": 0.763281124416205,
+        "hv_improvement_rel": 0.04443969813039472,
+        "coverage": 0.78,
+        "n_trials_total": 183,
+        "elapsed_s": 18.787342999999964,
+        "single_best_algorithm": "exponentiated_gradient"
+      },
+      {
+        "constraint": "demographic_parity_diff",
+        "scenario": "strong_sampling",
+        "baseline_accuracy": 0.7725,
+        "baseline_violation": 0.709,
+        "pareto_front": [
+          {
+            "algorithm": "none",
+            "params": {},
+            "accuracy": 0.7725,
+            "violation": 0.709,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "reweighing",
+            "params": {},
+            "accuracy": 0.717,
+            "violation": 0.332,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7453942447208348
+            },
+            "accuracy": 0.7815,
+            "violation": 0.777,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.10517943155978948
+            },
+            "accuracy": 0.774,
+            "violation": 0.736,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.8728673384861885
+            },
+            "accuracy": 0.7755,
+            "violation": 0.745,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7226689489062432
+            },
+            "accuracy": 0.783,
+            "violation": 0.78,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9911634860567192
+            },
+            "accuracy": 0.7675,
+            "violation": 0.631,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9965238430846463
+            },
+            "accuracy": 0.764,
+            "violation": 0.618,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7939710952590462
+            },
+            "accuracy": 0.78,
+            "violation": 0.768,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.8894565810674616
+            },
+            "accuracy": 0.7735,
+            "violation": 0.731,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.6955,
+            "violation": 0.249,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.7265,
+            "violation": 0.37100000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.03626341140709585,
+              "eta": 1.3260289895074158,
+              "max_iter": 14
+            },
+            "accuracy": 0.639,
+            "violation": 0.066,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.7405,
+            "violation": 0.43699999999999994,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.25308393942411805,
+              "eta": 0.47604084388175905,
+              "max_iter": 7
+            },
+            "accuracy": 0.748,
+            "violation": 0.504,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07135326275896146,
+              "eta": 0.5955149158473991,
+              "max_iter": 13
+            },
+            "accuracy": 0.667,
+            "violation": 0.14600000000000002,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1409446052197924,
+              "eta": 0.5785978822574545,
+              "max_iter": 14
+            },
+            "accuracy": 0.707,
+            "violation": 0.282,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.711,
+            "violation": 0.3,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.7155,
+            "violation": 0.325,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2866311483426687,
+              "eta": 0.9149355517359232,
+              "max_iter": 20
+            },
+            "accuracy": 0.7595,
+            "violation": 0.573,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02239637727380979,
+              "eta": 0.9352970178858243,
+              "max_iter": 11
+            },
+            "accuracy": 0.6375,
+            "violation": 0.059,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02102707751424339,
+              "eta": 0.9630151525988264,
+              "max_iter": 11
+            },
+            "accuracy": 0.637,
+            "violation": 0.03999999999999998,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.0924262676191712,
+              "eta": 1.0981066566468858,
+              "max_iter": 11
+            },
+            "accuracy": 0.677,
+            "violation": 0.18200000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10002331578311922,
+              "eta": 0.7552459973233315,
+              "max_iter": 17
+            },
+            "accuracy": 0.679,
+            "violation": 0.19599999999999995,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05216192314553746,
+              "eta": 0.8093167845541949,
+              "max_iter": 9
+            },
+            "accuracy": 0.6545,
+            "violation": 0.10500000000000004,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.08202144602064876,
+              "eta": 0.761453928118447,
+              "max_iter": 5
+            },
+            "accuracy": 0.6695,
+            "violation": 0.16100000000000003,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1083180298811071,
+              "eta": 1.1551887140121007,
+              "max_iter": 9
+            },
+            "accuracy": 0.69,
+            "violation": 0.21799999999999997,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.06317719773234304,
+              "eta": 1.0473042022592907,
+              "max_iter": 10
+            },
+            "accuracy": 0.6585,
+            "violation": 0.127,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04025527921017642,
+              "eta": 0.7004582740591027,
+              "max_iter": 12
+            },
+            "accuracy": 0.6455,
+            "violation": 0.08100000000000002,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07518924767293306,
+              "eta": 0.9534358643058842,
+              "max_iter": 7
+            },
+            "accuracy": 0.6675,
+            "violation": 0.15100000000000002,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04607494334624483,
+              "eta": 0.8732855601346932,
+              "max_iter": 10
+            },
+            "accuracy": 0.652,
+            "violation": 0.08600000000000002,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.06332279574789625,
+              "eta": 0.6702012267438442,
+              "max_iter": 18
+            },
+            "accuracy": 0.657,
+            "violation": 0.11600000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.19131881052226624,
+              "lambda_fair": 0.783519917195005,
+              "grid_size": 8
+            },
+            "accuracy": 0.72,
+            "violation": 0.334,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.07148615134600404,
+              "grid_size": 50
+            },
+            "accuracy": 0.645,
+            "violation": 0.07,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.21836795387525887,
+              "grid_size": 50
+            },
+            "accuracy": 0.6825,
+            "violation": 0.20699999999999996,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.215496807724474,
+              "grid_size": 20
+            },
+            "accuracy": 0.682,
+            "violation": 0.20399999999999996,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.04146702568514224,
+              "grid_size": 20
+            },
+            "accuracy": 0.6325,
+            "violation": 0.02100000000000002,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.09874804165259493,
+              "grid_size": 20
+            },
+            "accuracy": 0.654,
+            "violation": 0.09000000000000002,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.3221499917616366,
+              "grid_size": 20
+            },
+            "accuracy": 0.7035,
+            "violation": 0.27299999999999996,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.04768749832903559,
+              "grid_size": 50
+            },
+            "accuracy": 0.6365,
+            "violation": 0.03300000000000003,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.024336304186876795,
+              "grid_size": 50
+            },
+            "accuracy": 0.6285,
+            "violation": 0.007000000000000006,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.12091483682088358,
+              "grid_size": 50
+            },
+            "accuracy": 0.656,
+            "violation": 0.11399999999999999,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "reject_option",
+            "params": {
+              "lambda_fair": 0.13698186464983753,
+              "theta_steps": 15
+            },
+            "accuracy": 0.769,
+            "violation": 0.636,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.024336304186876795,
+            "grid_size": 50
+          },
+          "accuracy": 0.6285,
+          "violation": 0.007000000000000006,
+          "backend": "native",
+          "used_fallback": true
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7267254999999999,
+        "single_best_hypervolume": 0.686388,
+        "hv_improvement_rel": 0.0587677814880212,
+        "coverage": 0.73,
+        "n_trials_total": 183,
+        "elapsed_s": 18.87051480000082,
+        "single_best_algorithm": "threshold_optimizer"
+      },
+      {
+        "constraint": "equal_opportunity_diff",
+        "scenario": "strong_sampling",
+        "baseline_accuracy": 0.7725,
+        "baseline_violation": 0.6164967158146158,
+        "pareto_front": [
+          {
+            "algorithm": "none",
+            "params": {},
+            "accuracy": 0.7725,
+            "violation": 0.6164967158146158,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7453942447208348
+            },
+            "accuracy": 0.7815,
+            "violation": 0.6857976206880714,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.10517943155978948
+            },
+            "accuracy": 0.774,
+            "violation": 0.6527605530292591,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.8728673384861885
+            },
+            "accuracy": 0.7755,
+            "violation": 0.6637729089155298,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7226689489062432
+            },
+            "accuracy": 0.783,
+            "violation": 0.6898626613384777,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9813392348016604
+            },
+            "accuracy": 0.769,
+            "violation": 0.5134697533416012,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9911634860567192
+            },
+            "accuracy": 0.7675,
+            "violation": 0.5080496991410592,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.7939710952590462
+            },
+            "accuracy": 0.78,
+            "violation": 0.6774952919020716,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.8894565810674616
+            },
+            "accuracy": 0.7735,
+            "violation": 0.6500505259289882,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.721,
+            "violation": 0.16455376418170964,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.737,
+            "violation": 0.24740480455652014,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.746,
+            "violation": 0.286034173901061,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07135326275896146,
+              "eta": 0.5955149158473991,
+              "max_iter": 13
+            },
+            "accuracy": 0.7045,
+            "violation": 0.10000688989940754,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05905828098257171,
+              "eta": 0.5797880430957836,
+              "max_iter": 10
+            },
+            "accuracy": 0.6965,
+            "violation": 0.07561664599696849,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.726,
+            "violation": 0.18928850305452205,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.7315,
+            "violation": 0.20301088604106377,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2866311483426687,
+              "eta": 0.9149355517359232,
+              "max_iter": 20
+            },
+            "accuracy": 0.7555,
+            "violation": 0.3641541500160764,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02102707751424339,
+              "eta": 0.9630151525988264,
+              "max_iter": 11
+            },
+            "accuracy": 0.6845,
+            "violation": 0.02242662257131045,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.09228071163325018,
+              "eta": 0.8330724863139702,
+              "max_iter": 10
+            },
+            "accuracy": 0.712,
+            "violation": 0.11779431353635572,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05216079022435583,
+              "eta": 0.7192107370630949,
+              "max_iter": 9
+            },
+            "accuracy": 0.696,
+            "violation": 0.07002434431123983,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10831586241790003,
+              "eta": 1.1017748014079627,
+              "max_iter": 5
+            },
+            "accuracy": 0.7145,
+            "violation": 0.13999127279408385,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04985555608843466,
+              "eta": 0.7420019908257508,
+              "max_iter": 12
+            },
+            "accuracy": 0.6955,
+            "violation": 0.061894263010426775,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.023679288400986376,
+              "eta": 0.8495729292041463,
+              "max_iter": 11
+            },
+            "accuracy": 0.6905,
+            "violation": 0.038859032658123294,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07416453890880517,
+              "eta": 0.6814417213535819,
+              "max_iter": 9
+            },
+            "accuracy": 0.705,
+            "violation": 0.10306141197005192,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02032291755791289,
+              "eta": 0.8196934606415087,
+              "max_iter": 7
+            },
+            "accuracy": 0.6855,
+            "violation": 0.0290294428368012,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.12487123327726149,
+              "lambda_fair": 4.758500101408589,
+              "grid_size": 4
+            },
+            "accuracy": 0.7225,
+            "violation": 0.18251343530384456,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.23984926919004376,
+              "lambda_fair": 1.0784015325759628,
+              "grid_size": 6
+            },
+            "accuracy": 0.672,
+            "violation": 0.008738689081806084,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.22191145525838518,
+              "grid_size": 50
+            },
+            "accuracy": 0.7325,
+            "violation": 0.21894952000367462,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.215496807724474,
+              "grid_size": 20
+            },
+            "accuracy": 0.719,
+            "violation": 0.15560837811767947,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.12052254382721232,
+              "grid_size": 20
+            },
+            "accuracy": 0.7035,
+            "violation": 0.08243764641036233,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.022490615374376716,
+              "grid_size": 20
+            },
+            "accuracy": 0.676,
+            "violation": 0.012413302099122725,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.31247992228714283,
+              "grid_size": 50
+            },
+            "accuracy": 0.749,
+            "violation": 0.3097813605254697,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.34978960475171195,
+              "grid_size": 20
+            },
+            "accuracy": 0.7525,
+            "violation": 0.32092003123421065,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "group_threshold",
+            "params": {
+              "grid_size": 50
+            },
+            "accuracy": 0.669,
+            "violation": 0.003709062514353878,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "reject_option",
+            "params": {
+              "lambda_fair": 0.13698186464983753,
+              "theta_steps": 15
+            },
+            "accuracy": 0.764,
+            "violation": 0.4258187497129209,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "group_threshold",
+          "params": {
+            "grid_size": 50
+          },
+          "accuracy": 0.669,
+          "violation": 0.003709062514353878,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7521997094759085,
+        "single_best_hypervolume": 0.6822494775159617,
+        "hv_improvement_rel": 0.10252881719255003,
+        "coverage": 0.77,
+        "n_trials_total": 183,
+        "elapsed_s": 20.969746799997665,
+        "single_best_algorithm": "group_threshold"
+      },
+      {
+        "constraint": "demographic_parity_diff",
+        "scenario": "mixed",
+        "baseline_accuracy": 0.788,
+        "baseline_violation": 0.719,
+        "pareto_front": [
+          {
+            "algorithm": "reweighing",
+            "params": {},
+            "accuracy": 0.715,
+            "violation": 0.283,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9531785910894204
+            },
+            "accuracy": 0.7825,
+            "violation": 0.6160000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9718129888921859
+            },
+            "accuracy": 0.7805,
+            "violation": 0.5820000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9608852839400439
+            },
+            "accuracy": 0.7815,
+            "violation": 0.5980000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9813392348016604
+            },
+            "accuracy": 0.779,
+            "violation": 0.5609999999999999,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9911634860567192
+            },
+            "accuracy": 0.773,
+            "violation": 0.533,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9965238430846463
+            },
+            "accuracy": 0.7715,
+            "violation": 0.52,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9047614477989705
+            },
+            "accuracy": 0.791,
+            "violation": 0.691,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9963373563631943
+            },
+            "accuracy": 0.772,
+            "violation": 0.521,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.7035,
+            "violation": 0.25,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.7365,
+            "violation": 0.38000000000000006,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.7545,
+            "violation": 0.42799999999999994,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.25308393942411805,
+              "eta": 0.47604084388175905,
+              "max_iter": 7
+            },
+            "accuracy": 0.768,
+            "violation": 0.503,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1409446052197924,
+              "eta": 0.5785978822574545,
+              "max_iter": 14
+            },
+            "accuracy": 0.713,
+            "violation": 0.27899999999999997,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.7195,
+            "violation": 0.298,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.7255,
+            "violation": 0.334,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2866311483426687,
+              "eta": 0.9149355517359232,
+              "max_iter": 20
+            },
+            "accuracy": 0.7795,
+            "violation": 0.5720000000000001,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02239637727380979,
+              "eta": 0.9352970178858243,
+              "max_iter": 11
+            },
+            "accuracy": 0.6475,
+            "violation": 0.04799999999999999,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.09228071163325018,
+              "eta": 0.8330724863139702,
+              "max_iter": 10
+            },
+            "accuracy": 0.68,
+            "violation": 0.17700000000000005,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10002331578311922,
+              "eta": 1.1359463239439158,
+              "max_iter": 17
+            },
+            "accuracy": 0.685,
+            "violation": 0.19499999999999995,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04961910249854516,
+              "eta": 0.7420019908257508,
+              "max_iter": 12
+            },
+            "accuracy": 0.662,
+            "violation": 0.09500000000000003,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.06332279574789625,
+              "eta": 0.42147945065794307,
+              "max_iter": 7
+            },
+            "accuracy": 0.671,
+            "violation": 0.125,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.19131881052226624,
+              "lambda_fair": 0.783519917195005,
+              "grid_size": 8
+            },
+            "accuracy": 0.7315,
+            "violation": 0.35400000000000004,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.21836795387525887,
+              "grid_size": 50
+            },
+            "accuracy": 0.693,
+            "violation": 0.20299999999999996,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.2947060714641392,
+              "grid_size": 10
+            },
+            "accuracy": 0.708,
+            "violation": 0.257,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.04146702568514224,
+              "grid_size": 20
+            },
+            "accuracy": 0.627,
+            "violation": 0.013000000000000012,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.12052254382721232,
+              "grid_size": 20
+            },
+            "accuracy": 0.6545,
+            "violation": 0.06599999999999995,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.3221499917616366,
+              "grid_size": 20
+            },
+            "accuracy": 0.7205,
+            "violation": 0.302,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.04768749832903559,
+              "grid_size": 50
+            },
+            "accuracy": 0.6465,
+            "violation": 0.041999999999999926,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.15183069843062355,
+              "grid_size": 20
+            },
+            "accuracy": 0.6785,
+            "violation": 0.14799999999999996,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.024336304186876795,
+              "grid_size": 50
+            },
+            "accuracy": 0.6385,
+            "violation": 0.016000000000000014,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.12091483682088358,
+              "grid_size": 50
+            },
+            "accuracy": 0.6675,
+            "violation": 0.10800000000000004,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "group_threshold",
+            "params": {
+              "grid_size": 50
+            },
+            "accuracy": 0.6325,
+            "violation": 0.014000000000000012,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "reject_option",
+            "params": {
+              "lambda_fair": 3.0028313874240085,
+              "theta_steps": 10
+            },
+            "accuracy": 0.5615,
+            "violation": 0.010000000000000009,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "threshold_optimizer",
+          "params": {
+            "eps": 0.024336304186876795,
+            "grid_size": 50
+          },
+          "accuracy": 0.6385,
+          "violation": 0.016000000000000014,
+          "backend": "native",
+          "used_fallback": true
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7362869999999999,
+        "single_best_hypervolume": 0.6976954999999999,
+        "hv_improvement_rel": 0.05531281196453186,
+        "coverage": 0.75,
+        "n_trials_total": 183,
+        "elapsed_s": 19.560449600001448,
+        "single_best_algorithm": "threshold_optimizer"
+      },
+      {
+        "constraint": "equal_opportunity_diff",
+        "scenario": "mixed",
+        "baseline_accuracy": 0.788,
+        "baseline_violation": 0.5771897698834157,
+        "pareto_front": [
+          {
+            "algorithm": "disparate_impact_remover",
+            "params": {
+              "repair_level": 0.9047614477989705
+            },
+            "accuracy": 0.791,
+            "violation": 0.5427211133492034,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.12487123327726149,
+              "eta": 1.435928598332891,
+              "max_iter": 16
+            },
+            "accuracy": 0.7465,
+            "violation": 0.1485320148934871,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.18762437557517023,
+              "eta": 0.40282423257516753,
+              "max_iter": 7
+            },
+            "accuracy": 0.7655,
+            "violation": 0.25564304461942255,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.03626341140709585,
+              "eta": 1.3260289895074158,
+              "max_iter": 14
+            },
+            "accuracy": 0.7165,
+            "violation": 0.0418848806689861,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2182603217828927,
+              "eta": 0.22675984258454318,
+              "max_iter": 20
+            },
+            "accuracy": 0.7745,
+            "violation": 0.2648293963254593,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.07135326275896146,
+              "eta": 0.5955149158473991,
+              "max_iter": 13
+            },
+            "accuracy": 0.7265,
+            "violation": 0.08733443203320523,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.1409446052197924,
+              "eta": 0.5785978822574545,
+              "max_iter": 14
+            },
+            "accuracy": 0.7505,
+            "violation": 0.1809741805530123,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05905828098257171,
+              "eta": 0.5797880430957836,
+              "max_iter": 10
+            },
+            "accuracy": 0.7255,
+            "violation": 0.08339742415918949,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.14769959558077003,
+              "eta": 1.2207287498109176,
+              "max_iter": 8
+            },
+            "accuracy": 0.752,
+            "violation": 0.19946285784044437,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.16398564275581123,
+              "eta": 0.9701389395206552,
+              "max_iter": 5
+            },
+            "accuracy": 0.7595,
+            "violation": 0.20733687358847586,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.2866311483426687,
+              "eta": 0.9149355517359232,
+              "max_iter": 20
+            },
+            "accuracy": 0.783,
+            "violation": 0.36287004822071667,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.02239637727380979,
+              "eta": 0.9352970178858243,
+              "max_iter": 11
+            },
+            "accuracy": 0.713,
+            "violation": 0.026020875297564583,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.09228071163325018,
+              "eta": 1.1536958011002558,
+              "max_iter": 17
+            },
+            "accuracy": 0.7355,
+            "violation": 0.11358115119331014,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10002151654145666,
+              "eta": 0.7552459973233315,
+              "max_iter": 17
+            },
+            "accuracy": 0.7395,
+            "violation": 0.11751815906732588,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.05216079022435583,
+              "eta": 0.8093167845541949,
+              "max_iter": 10
+            },
+            "accuracy": 0.7245,
+            "violation": 0.06288225599707009,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.08263531559594212,
+              "eta": 1.1791917122344135,
+              "max_iter": 11
+            },
+            "accuracy": 0.7325,
+            "violation": 0.09985961057193438,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.10831586241790003,
+              "eta": 1.3010949604052644,
+              "max_iter": 9
+            },
+            "accuracy": 0.7405,
+            "violation": 0.13672099127143988,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.04611662789159693,
+              "eta": 0.840298488196221,
+              "max_iter": 19
+            },
+            "accuracy": 0.7205,
+            "violation": 0.05894524812305435,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "exponentiated_gradient",
+            "params": {
+              "eps": 0.034852867698566686,
+              "eta": 1.3950883777709162,
+              "max_iter": 10
+            },
+            "accuracy": 0.717,
+            "violation": 0.04844656045901241,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.12487123327726149,
+              "lambda_fair": 4.758500101408589,
+              "grid_size": 4
+            },
+            "accuracy": 0.7485,
+            "violation": 0.18026002563633037,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "grid_search",
+            "params": {
+              "eps": 0.23984926919004376,
+              "lambda_fair": 1.0784015325759628,
+              "grid_size": 6
+            },
+            "accuracy": 0.702,
+            "violation": 0.021601660257584032,
+            "backend": "fairlearn",
+            "used_fallback": false
+          },
+          {
+            "algorithm": "threshold_optimizer",
+            "params": {
+              "eps": 0.024336304186876795,
+              "grid_size": 50
+            },
+            "accuracy": 0.6955,
+            "violation": 0.015540499298052901,
+            "backend": "native",
+            "used_fallback": true
+          },
+          {
+            "algorithm": "reject_option",
+            "params": {
+              "lambda_fair": 1.9352465823520764,
+              "theta_steps": 5
+            },
+            "accuracy": 0.6245,
+            "violation": 0.009747909418299505,
+            "backend": "fairlearn",
+            "used_fallback": false
+          }
+        ],
+        "recommended": {
+          "algorithm": "exponentiated_gradient",
+          "params": {
+            "eps": 0.02239637727380979,
+            "eta": 0.9352970178858243,
+            "max_iter": 11
+          },
+          "accuracy": 0.713,
+          "violation": 0.026020875297564583,
+          "backend": "fairlearn",
+          "used_fallback": false
+        },
+        "fallback_event": false,
+        "hypervolume": 0.7662249618506989,
+        "single_best_hypervolume": 0.7516300036623329,
+        "hv_improvement_rel": 0.019417742928371284,
+        "coverage": 0.78,
+        "n_trials_total": 183,
+        "elapsed_s": 19.95815450000009,
+        "single_best_algorithm": "exponentiated_gradient"
+      }
+    ],
+    "elapsed_s": 118.8,
+    "environment": {
+      "platform": "Windows-11-10.0.29671-SP0",
+      "python": "3.13.14",
+      "numpy": "2.5.3",
+      "scikit_learn": "1.7.2",
+      "fairlearn": "0.14.0",
+      "optuna": "4.9.0",
+      "backends_available": {
+        "fairlearn": true,
+        "optuna": true
+      }
+    }
+  }
+}
